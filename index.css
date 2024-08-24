@@ -1,0 +1,185 @@
+body {
+    font-family: Helvetica;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 5px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.about p,
+.projects p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+#about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-content p{
+    width: 70%;
+}
+
+#photo{
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 0 15px;
+}
+
+#about-resume{
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-content: center;
+    margin: 0 0 0 0 ;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#about-resume p{
+    margin: 0 !important;
+    padding: 0;
+    font-size: 18px;
+}
+
+#about-resume a{
+    color: #589bff;
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 0;
+    font-size: 18px;
+}
+
+.contact-div{
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-content: center;
+    margin: 0 0 0 0 ;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contact-div p{
+    margin: 0 !important;
+    padding: 0;
+    font-size: 18px;
+}
+
+.contact-div a, h3{
+    color: #589bff;
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 0;
+    font-size: 18px;
+}
+
+.projects .project {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.projects .project h3 {
+    color: #333;
+    margin-top: 0 0 0 0;
+    font-size: 1.5rem;
+}
+
+.project-sub{
+    color: #333;
+    margin-top: 0;
+    font-size: 1rem;
+    margin: -3px 0 0 0 !important;
+}
+
+.projects .project p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0 0 0;
+}
+
+.demo-and-git{
+    display: flex;
+    gap: 15px;
+    color: #589bff;
+    text-decoration: none !important;
+    margin: 15px 0 0 0 !important;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.demo-and-git a{
+    color: #589bff !important;
+    text-decoration: none !important;
+}
+
+.key-head{
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    color: #333 !important;
+}
+
+.project ul{
+    margin: 0;
+    color: #666;
+}
