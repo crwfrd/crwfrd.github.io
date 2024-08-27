@@ -183,3 +183,42 @@ h2 {
     margin: 0;
     color: #666;
 }
+
+@media (max-width: 600px) {
+    #about-right{
+        font-size: 14px;
+    }
+    #about-resume a, #about-resume p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    #about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    #photo{
+        max-height: 1000px !important;
+        max-width: 1000px !important;
+        height: max-content;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    #about-right{
+        font-size: 14px;
+        text-align: center;
+        align-items: center;
+    }
+    #about-resume{
+        justify-content: space-around;
+        width: 75%;
+    }
+    .contact-div p{
+        font-size: 16px;
+    }
+    
+    .contact-div a, h3{
+        font-size: 16px;
+    }
+}
