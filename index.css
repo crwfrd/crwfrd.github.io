@@ -38,6 +38,10 @@ header nav a {
     font-size: 1.2rem;
 }
 
+.a-hide{
+    display: none;
+}
+
 main {
     padding: 2rem;
 }
