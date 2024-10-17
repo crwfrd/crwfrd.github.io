@@ -152,6 +152,11 @@ h2 {
     font-size: 1.5rem;
 }
 
+.projects .project .h3-italic{
+    color: #ffc400;
+    font-size: 1.3rem;
+}
+
 .project-sub{
     color: #333;
     margin-top: 0;
