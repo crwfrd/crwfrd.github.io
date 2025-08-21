@@ -3,150 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blake Crawford Portfolio</title>
+    <title>Blake Crawford — Portfolio</title>
     <meta name="description" content="William Blake Crawford Portfolio Page">
     <link rel="stylesheet" href="index.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
+    <section id="intro">
+        <div class="intro-text"></div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
     <header>
-        <h1>William Blake Crawford</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-inner">
+            <h1 class="name">William Blake Crawford</h1>
+            <nav class="site-nav" role="navigation" aria-label="Main site navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        
-        <section id="about" class="about">
-
+        <section id="about" class="about reveal-section">
             <h2>About Me</h2>
-
             <div id="about-content">
-                <img src="IMG_3426.jpg" alt="personal-photo" id="photo">
-                <div id="about-right">
-                    Hello! I’m William Crawford, but I usually go by my middle name, Blake. I am a Computer Science and Math major currently attending the University of Florida. I am interested in all forms of problem-solving, whether it be designing video game mechanics or optimizing programming algorithms. In my free time, I enjoy pickleball, talking about mixed martial arts, and the gym.
+                <div id="about-left">
+                    <div class="photo-container">
+                        <div class="photo-glow"></div>
+                        <img src="IMG_3426.jpg" alt="Blake Crawford portrait" id="photo">
+                    </div>
                     <div id="about-resume">
-                        <a href="Blake_Resume_2025_v2.pdf" target="_blank">Resume</a>
+                        <a class="neon-link" href="Blake_Resume_2025_v2.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                         <p>Last updated: 8/18/2025</p>
                     </div>
+                </div>
+                <div id="about-right">
+                    <div class="name-group">
+                        <div class="name-title">William Blake Crawford</div>
+                        <div class="role">Software Engineer & Student</div>
+                    </div>
+                    <div class="intro-name">My first name is William, but I typically go by my middle name, Blake.</div>
+                    <p class="bio">
+                        I am a Computer Science and Math major currently attending the University of Florida. I am interested in all forms of problem-solving, whether it be designing video game mechanics or optimizing programming algorithms. In my free time, I enjoy pickleball, talking about mixed martial arts, and the gym.
+                    </p>
                 </div>
             </div>
         </section>
 
-        
-        <section id="projects" class="projects">
+        <section id="experience" class="experience reveal-section">
+            <h2>Experience</h2>
+            <div class="experience-list">
+                <article class="exp-item">
+                    <img class="exp-img" src="Zebra_logo.jpeg" alt="Zebra Technologies">
+                    <div class="exp-text">
+                        <div class="exp-header">
+                            <h3>Zebra Technologies</h3>
+                            <div class="exp-role">Software Engineering Intern</div>
+                            <div class="exp-meta">May 2025 - Aug 2025 • Kennesaw, GA</div>
+                        </div>
+                        <p class="exp-description">
+                            Led development of multiple full-stack applications, including a change logging system supporting 100K+ monthly updates using Django, MySQL, and React. Developed a Workday integration app using FastAPI, MongoDB, and React, and implemented LLM-powered assistants using Llama 3 for natural language database queries and integration scheduling.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="exp-item">
+                    <img class="exp-img" src="UF_logo.jpg" alt="University of Florida">
+                    <div class="exp-text">
+                        <div class="exp-header">
+                            <h3>University of Florida CISE</h3>
+                            <div class="exp-role">Teacher Assistant, Programming Fundamentals 1</div>
+                            <div class="exp-meta">Jan 2024 - May 2024 • Gainesville, FL</div>
+                        </div>
+                        <p class="exp-description">
+                            Instructed weekly sections of 50 students on object-oriented programming, control flow, data abstraction, and modularity in Python. Created and maintained comprehensive review materials and study guides for 500+ students while providing detailed feedback on programming assignments and exams.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="projects reveal-section">
             <h2>Projects</h2>
 
-            <section class="project" id="clarifina">
-                <h3>Clarifina <i class="h3-italic">2024 ShellHacks Vanguard Winner</i></h3>
-                <p class="project-sub"><i>React, Node, Express, AWS (S3 and Lambda), TypeScript, Firebase, OpenAI API </i></p>
-                <p>
-                    Clarifina is a financial literacy web application designed with underrepresented communities in mind. Its core functionality enables users to upload financial documents, which are scanned to identify complex financial terminology. These terms are highlighted, allowing users to click on them for clear explanations. Additionally, a document summary with opportunities are provided.
-                </p>
-                <p class="key-head">Key Features</p>
-                <ul>
-                    <li>Leveraged AWS S3 to store PDFs and utilized AWS Lambda with Textract for coordinates to generate highlighted bounding boxes around key terms within documents.</li>
-                    <li>Integrated the OpenAI API within an Express backend to analyze extracted text, both assesing complexity and providing explanations</li>
-                    <li>Included user profiles, authentication, and past document viewing through Firebase</li>
-                </ul>
-                <div class="demo-and-git">
-                    <a href="https://youtu.be/A8pGd-F6laU" target="_blank">View Demo</a>
-                    <a href="https://github.com/aarnavgautam/clarifin-ai" target="_blank">View Repo</a>
-                    <a href="https://devpost.com/software/clarifina" target="_blank">View DevPost</a>
+            <article class="project" id="clarifina">
+                <img class="project-img" src="Clarifina.png" alt="Clarifina screenshot placeholder">
+                <div class="project-text">
+                    <h3>Clarifina <span class="h3-italic">2024 ShellHacks Vanguard Winner</span></h3>
+                    <p class="project-sub"><em>React, Node, Express, AWS (S3 and Lambda), TypeScript, Firebase, OpenAI API</em></p>
+                    <p>Clarifina is a financial literacy web application designed with underrepresented communities in mind. Its core functionality enables users to upload financial documents, which are scanned to identify and explain complex financial terminology.</p>
+                    <p class="key-head">Key Features</p>
+                    <ul>
+                        <li>Leveraged AWS S3 to store PDFs and utilized AWS Lambda with Textract for coordinates to generate highlighted bounding boxes around key terms within documents.</li>
+                        <li>Integrated the OpenAI API within an Express backend to analyze extracted text, both assessing complexity and providing explanations.</li>
+                        <li>Included user profiles, authentication, and past document viewing through Firebase.</li>
+                    </ul>
+                    <div class="demo-and-git">
+                        <a href="https://youtu.be/A8pGd-F6laU" target="_blank" rel="noopener noreferrer">View Demo</a>
+                        <a href="https://github.com/aarnavgautam/clarifin-ai" target="_blank" rel="noopener noreferrer">View Repo</a>
+                        <a href="https://devpost.com/software/clarifina" target="_blank" rel="noopener noreferrer">DevPost</a>
+                    </div>
                 </div>
-            </section>
-            
-            <section class="project" id="gainesville-crime">
-                <h3>Gainesville Crime</h3>
-                <p class="project-sub"><i>Flask, Python, JavaScript, HTML/CSS, Leaflet API</i></p>
-                <p>
-                    A web application that visualizes crime data in Gainesville using an interactive heatmap. Users can filter the data based on various criteria to explore specific patterns. The application also features a comparison of Heap Sort and Shell Sort algorithms, showcasing their performance through real-time calculation and visualization of sorting times.
-                </p>
-                <p class="key-head">Key Features</p>
-                <ul>
-                    <li>Operates on over 210k crime data points</li>
-                    <li>Uses a mixture of Leaftlet API and My Maps Geocode API to create map UI and relate address to lattitude/longitude</li>
-                    <li>Imported JSON data to allow for toggle display of SNAP, AED, and Blue Phone locations</li>
-                </ul>
-                <div class="demo-and-git">
-                    <a href="https://gainesville-crime.vercel.app/" target="_blank">View Demo</a>
-                    <a href="https://github.com/Soor1/gainesville-crime" target="_blank">View Repo</a>
-                </div>
-            </section>
-            
-            <section class="project" id="strange-showdown">
-                <h3>Strange Showdown</h3>
-                <p class="project-sub"><i>Roblox Studio, Lua</i></p>
-                <p>A free-for-all, round-based fighting game developed with the Roblox Studio engine and Lua. Players select unique characters, each with five special abilities, to battle for gold, XP, and leaderboard dominance.</p>
-                <p class="key-head">Key Features</p>
-                <ul>
-                    <li>Developed an API to manage and manipulate a custom set of checks and values for each player model.</li>
-                    <li>Designed the game flow to manage round progression, prompt updates to the graphical user interface (GUI), and incorporate new players.</li>
-                    <li>Utilized a player datastore to track user activity through different session and dynamically display leaderboards.</li>
-                </ul>
-                <div class="demo-and-git">
-                    <a href="https://www.roblox.com/games/17641055070/Strange-Showdown" target="_blank">View Demo</a>
-                    <!-- <a href="" target="_blank">View Repo</a> -->
-                </div>
-            </section>
+            </article>
 
-            <section class="project" id="biome-battle">
-                <h3>Biome Battle</h3>
-                <p class="project-sub"><i>Roblox Studio, Lua</i></p>
-                <p>
-                    A cash-based tycoon game made with the Roblox Studio engine and Lua. Up to 6 players from different biomes compete to raise 
-                    their flag color in the center of the map, unlocking income generators and buying abilities along the way.
-                </p>
-                <p class="key-head">Key Features</p>
-                <ul>
-                    <li> Created a uniform tycoon ID system for distinct plots to progressively unlock, copy, and place milestones </li>
-                    <li> Designed items which used engine physics such as position, vector force, velocity, and raycasting to create
-                        dynamic gameplay and unique mechanics </li>
-                </ul>
-                <div class="demo-and-git">
-                    <a href="https://www.roblox.com/games/17624934368/Biome-Battle-Tycoon" target="_blank">View Demo</a>
-                    <!-- <a href="" target="_blank">View Repo</a> -->
+            <article class="project" id="gainesville-crime">
+                <img class="project-img" src="Gainesville_Crime.png" alt="Gainesville Crime screenshot placeholder">
+                <div class="project-text">
+                    <h3>Gainesville Crime</h3>
+                    <p class="project-sub"><em>Flask, Python, JavaScript, HTML/CSS, Leaflet API</em></p>
+                    <p>A web application that visualizes crime data in Gainesville using an interactive heatmap. Users can filter the data based on various criteria to explore specific patterns.</p>
+                    <p class="key-head">Key Features</p>
+                    <ul>
+                        <li>Operates on over 210k crime data points.</li>
+                        <li>Uses a mixture of Leaflet API and My Maps Geocode API to create map UI and relate address to latitude/longitude.</li>
+                    </ul>
+                    <div class="demo-and-git">
+                        <a href="https://gainesville-crime.vercel.app/" target="_blank" rel="noopener noreferrer">View Demo</a>
+                        <a href="https://github.com/Soor1/gainesville-crime" target="_blank" rel="noopener noreferrer">View Repo</a>
+                    </div>
                 </div>
-            </section>
+            </article>
             
-            <section class="project" id="gator-relator">
-                <h3>GatorRelator</h3>
-                <p class="project-sub"><i>React, Firebase, JavaScript, HTML/CSS</i></p>
-                <p>Developed as a hackathon project, this website is designed to bring together the UF community by allowing students and alumni to create accounts and connect. The platform fosters networking through shared majors, graduation years, campus organizations, and places of employment, helping to build meaningful connections within the UF network.</p>
-                <p class="key-head">Key Features</p>
-                <ul>
-                    <li>Leverages Firebase Fireauth to provide custom account sign-in options via email or Google</li>
-                    <li>Efficiently searches and sorts Firestore data to identify alumni who best match your search criteria</li>
-                </ul>
-                <div class="demo-and-git">
-                    <a href="https://gator-relator.vercel.app/" target="_blank">View Demo</a>
-                    <a href="https://github.com/crwfrd/gator-relator-react" target="_blank">View Repo</a>
+            <article class="project" id="strange-showdown">
+                <img class="project-img" src="Strange_Showdown.png" alt="Strange Showdown screenshot">
+                <div class="project-text">
+                    <h3>Strange Showdown</h3>
+                    <p class="project-sub"><em>Roblox Studio, Lua</em></p>
+                    <p>A free-for-all, round-based fighting game developed with the Roblox Studio engine and Lua. Players select unique characters, each with five special abilities, to battle for gold, XP, and leaderboard dominance.</p>
+                    <p class="key-head">Key Features</p>
+                    <ul>
+                        <li>Developed an API to manage and manipulate a custom set of checks and values for each player model.</li>
+                        <li>Designed the game flow to manage round progression, prompt updates to the graphical user interface (GUI), and incorporate new players.</li>
+                        <li>Utilized a player datastore to track user activity through different session and dynamically display leaderboards.</li>
+                    </ul>
+                    <div class="demo-and-git">
+                        <a href="https://www.roblox.com/games/17641055070/Strange-Showdown" target="_blank" rel="noopener noreferrer">View Demo</a>
+                    </div>
                 </div>
-            </section>
+            </article>
+
+            <article class="project" id="biome-battle">
+                <img class="project-img" src="Biome_Battle.png" alt="Biome Battle screenshot">
+                <div class="project-text">
+                    <h3>Biome Battle</h3>
+                    <p class="project-sub"><em>Roblox Studio, Lua</em></p>
+                    <p>
+                        A cash-based tycoon game made with the Roblox Studio engine and Lua. Up to 6 players from different biomes compete to raise 
+                        their flag color in the center of the map, unlocking income generators and buying abilities along the way.
+                    </p>
+                    <p class="key-head">Key Features</p>
+                    <ul>
+                        <li>Created a uniform tycoon ID system for distinct plots to progressively unlock, copy, and place milestones</li>
+                        <li>Designed items which used engine physics such as position, vector force, velocity, and raycasting to create
+                            dynamic gameplay and unique mechanics</li>
+                    </ul>
+                    <div class="demo-and-git">
+                        <a href="https://www.roblox.com/games/17624934368/Biome-Battle-Tycoon" target="_blank" rel="noopener noreferrer">View Demo</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project" id="gator-relator">
+                <img class="project-img" src="Gator_Relator.png" alt="GatorRelator screenshot">
+                <div class="project-text">
+                    <h3>GatorRelator</h3>
+                    <p class="project-sub"><em>React, Firebase, JavaScript, HTML/CSS</em></p>
+                    <p>Developed as a hackathon project, this website is designed to bring together the UF community by allowing students and alumni to create accounts and connect. The platform fosters networking through shared majors, campus organizations, companies, and more.</p>
+                    <p class="key-head">Key Features</p>
+                    <ul>
+                        <li>Leverages Firebase Fireauth to provide custom account sign-in options via email or Google</li>
+                        <li>Efficiently searches and sorts Firestore data to identify alumni who best match your search criteria</li>
+                    </ul>
+                    <div class="demo-and-git">
+                        <a href="https://gator-relator.vercel.app/" target="_blank" rel="noopener noreferrer">View Demo</a>
+                        <a href="https://github.com/crwfrd/gator-relator-react" target="_blank" rel="noopener noreferrer">View Repo</a>
+                    </div>
+                </div>
+            </article>
         </section>
 
-        <section id="contact" class="contact">
-            
-                <h2>Contact Info</h2>
-
-                <div>
-                    <div class="contact-div">
-                        <p>Email</p>
-                        <h3>blke.crwfrd@gmail.com</h3>
-                    </div>
-                    <div class="contact-div">
-                        <p>Phone</p>
-                        <h3>954-849-0116</h3>
-                    </div>
-                    <div class="contact-div">
-                        <p>LinkedIn</p>
-                        <a href="https://www.linkedin.com/in/blakecrawford1" target="_blank">linkedin.com/in/blakecrawford1</a>
-                    </div>
+        <section id="contact" class="contact reveal-section">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-div">
+                    <p>Email</p>
+                    <h3><a class="neon-link" href="mailto:blke.crwfrd@gmail.com">blke.crwfrd@gmail.com</a></h3>
                 </div>
-        
+                <div class="contact-div">
+                    <p>Phone</p>
+                    <h3>954-849-0116</h3>
+                </div>
+                <div class="contact-div">
+                    <p>LinkedIn</p>
+                    <h3><a class="neon-link" href="https://www.linkedin.com/in/blakecrawford1" target="_blank" rel="noopener noreferrer">linkedin.com/in/blakecrawford1</a></h3>
+                </div>
+            </div>
         </section>
+
     </main>
 </body>
 </html>
